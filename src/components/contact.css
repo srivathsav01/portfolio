@@ -1,0 +1,23 @@
+.contact-menu {
+    display: none;    
+  }
+
+.contact-menu-container {
+    display: none;  
+}
+
+@media screen and (max-width: 768px) {
+    .contact-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+    }
+
+    .contact-menu-container.open{
+        display: flex;
+    }
+
+    .contact-menu-container.closed{
+        display: none;
+    }
+}
