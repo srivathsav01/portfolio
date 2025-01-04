@@ -1,5 +1,6 @@
 
 # Srivathsav Muralidharan - Portfolio
+![CI/CD](https://github.com/srivathsav01/portfolio/workflows/CI/CD/badge.svg)
 
 This is a fully responsive personal portfolio website, responsive for all devices, built using React .
 
