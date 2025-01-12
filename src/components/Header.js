@@ -38,7 +38,7 @@ const Header = () => {
             <Linkedin fill="black"className="mx-2"/>
         </div>
       </div>
-      {(width  > 768 || isToggleOpen) && <NavBar />}
+      {(width  > 799 || isToggleOpen) && <NavBar />}
       </div>
     </>
   );
