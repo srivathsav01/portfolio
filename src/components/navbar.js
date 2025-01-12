@@ -13,7 +13,7 @@ const NavBar = () => {
     return (
         <>
         <div className="navBar mt-1">
-            <div className={`mx-1 ${width>768 ? 'grid grid-cols-4 gap-2' : 'grid grid-rows-4 grid-flow-col gap-4'}`}>
+            <div className={`mx-1 ${width>799 ? 'grid grid-cols-4 gap-2' : 'grid grid-rows-4 grid-flow-col gap-4'}`}>
                 <div className='bg-[#212121] h-[80px] flex items-center justify-between p-2'>
                      <ArrowUpRight color="white" size="44px" strokeWidth="3px"/>
                      <div className='flex flex-col text-start w-[65%]'>
