@@ -1,7 +1,7 @@
 import './App.css';
-import Header from './components/Header';
-import Contact from './components/contact';
-import { ToasterProvider } from "./components/toaster";
+import Header from './components/header/Header';
+import Contact from './components/contact/contact';
+import { ToasterProvider } from "./components/toaster/toaster";
 
 function App() {
 

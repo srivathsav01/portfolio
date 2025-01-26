@@ -1,10 +1,10 @@
 import { useState,useEffect } from "react";
-import logo from '../assets/logo.jpg';
+import logo from '../../assets/logo.jpg';
 import './header.css';
-import { Linkedin,Menu,Mail,Github } from 'lucide-react';
-import NavBar from "./navbar";
-import { LINKS } from "./../constants";
-import { useToaster } from "./toaster";
+import { Linkedin,Menu,Mail,Github,X } from 'lucide-react';
+import NavBar from "../navbar/navbar";
+import { LINKS } from "../../constants";
+import { useToaster } from "../toaster/toaster";
 
 
 const Header = () => {
@@ -44,7 +44,8 @@ const Header = () => {
     <div>
       <div className="header">
         <div>
-            <Menu className="menuToggleBtn" onClick={handleToggleOpen}/>
+            {!isToggleOpen && <Menu className="menuToggleBtn" onClick={handleToggleOpen}/> }
+            {isToggleOpen &&  <X className="menuToggleBtn" onClick={handleToggleOpen}/>}
         </div>
         <div className="nav_logo">
             <img src={logo} alt="Logo" className="h-[45px]" />

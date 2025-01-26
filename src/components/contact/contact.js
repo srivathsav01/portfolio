@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './contact.css';
 import { Ellipsis, X, Linkedin, Mail, Github } from 'lucide-react';
-import { LINKS } from "./../constants";
+import { LINKS } from "../../constants";
 
 
 const Contact = () => {
@@ -40,7 +40,7 @@ const Contact = () => {
             <Linkedin fill="white" color="white" />
           </div>
         </div>
-        <div className="contact-menu rounded-full bg-black w-10 h-10 flex fixed bottom-5 right-5" onClick={handleToggleOpen}>
+        <div className={`contact-menu rounded-full bg-black w-10 h-10 flex fixed bottom-5 right-5 ${isToggleOpen ? 'open' : ''}`} onClick={handleToggleOpen}>
           {!isToggleOpen && <Ellipsis color="white"/>}
           {isToggleOpen &&  <X  color="white"/>}
         </div>

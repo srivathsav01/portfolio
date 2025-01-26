@@ -1,0 +1,51 @@
+.contact-menu {
+    display: none;    
+  }
+
+.contact-menu-container {
+    display: none;  
+}
+
+@media screen and (max-width: 799px) {
+    .contact-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      cursor: pointer; 
+    }
+
+    .contact-menu-container.open{
+        display: flex;
+        animation: fadeInSlideUp 0.5s ease;
+    }
+
+    .contact-menu-container.closed{
+        display: none;
+    }
+
+    .contact-menu.open {
+        transform: rotate(180deg);
+      }
+      
+      .contact-menu.open svg {
+        transform: rotate(-180deg);
+      }
+      
+      .contact-menu svg {
+        transition: transform 0.3s ease;
+      }
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
