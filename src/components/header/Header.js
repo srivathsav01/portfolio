@@ -42,21 +42,21 @@ const Header = () => {
   return (
     <>
     <div>
-      <div className="header">
+      <div className="bg-white w-full flex items-center justify-between pt-2.5 pb-2 px-3 border-b-[rgb(0,0,0,25%)] border-solid lg:border-b sm:border-b-[none]">
         <div>
-            {!isToggleOpen && <Menu className="menuToggleBtn" onClick={handleToggleOpen}/> }
-            {isToggleOpen &&  <X className="menuToggleBtn" onClick={handleToggleOpen}/>}
+            {!isToggleOpen && <Menu className="menuToggleBtn lg:hidden sm:block text-2xl" onClick={handleToggleOpen}/> }
+            {isToggleOpen &&  <X className="menuToggleBtn lg:hidden sm:block text-2xl" onClick={handleToggleOpen}/>}
         </div>
-        <div className="nav_logo">
+        <div className="py-0 px-3 sm:right-1">
             <img src={logo} alt="Logo" className="h-[45px]" />
         </div>
-        <div className="flex items-center contact_icons">
+        <div className="items-center sm:hidden lg:flex">
             <Mail color="white" fill="black" className="mx-2" onClick={openURL('Mail')}/>
             <Github fill="black"className="mx-2" onClick={openURL('Github')}/>
             <Linkedin fill="black"className="mx-2" onClick={openURL('Linkedin')}/>
         </div>
       </div>
-      {(width  > 799 || isToggleOpen) && <NavBar />}
+      {(width  > 1023 || isToggleOpen) && <NavBar />}
       </div>
     </>
   );
