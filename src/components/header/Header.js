@@ -50,7 +50,7 @@ const Header = () => {
         <div className="py-0 px-3 sm:right-1">
             <img src={logo} alt="Logo" className="h-[45px]" />
         </div>
-        <div className="items-center sm:hidden lg:flex">
+        <div className="items-center max-lg:hidden lg:flex">
             <Mail color="white" fill="black" className="mx-2" onClick={openURL('Mail')}/>
             <Github fill="black"className="mx-2" onClick={openURL('Github')}/>
             <Linkedin fill="black"className="mx-2" onClick={openURL('Linkedin')}/>
